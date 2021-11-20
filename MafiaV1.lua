@@ -304,14 +304,13 @@ function CheckQuest()
                  NameMon = "Ship Steward"
                  CFrameQuest = CFrame.new(968.80957, 125.092171, 33244.125, -0.869560242, 1.51905191e-08, -0.493826836, 1.44108379e-08, 1, 5.38534195e-09, 0.493826836, -2.43357912e-09, -0.869560242)
                  CFrameMon = CFrame.new(918.743286, 129.591064, 33443.4609, -0.999792814, -1.7070947e-07, -0.020350717, -1.72559169e-07, 1, 8.91351277e-08, 0.020350717, 9.2628369e-08, -0.999792814)
-              elseif MyLevel == 1325 or MyLevel <= 1349 then -- Ship Officer [Lv. 1325]
+              elseif MyLevel >= 1325 then
                  Ms = "Ship Officer [Lv. 1325]"
                  NaemQuest = "ShipQuest2"
                  LevelQuest = 2
                  NameMon = "Ship Officer"
                  CFrameQuest = CFrame.new(968.80957, 125.092171, 33244.125, -0.869560242, 1.51905191e-08, -0.493826836, 1.44108379e-08, 1, 5.38534195e-09, 0.493826836, -2.43357912e-09, -0.869560242)
                  CFrameMon = CFrame.new(786.051941, 181.474106, 33303.2969, 0.999285698, -5.32193063e-08, 0.0377905183, 5.68968588e-08, 1, -9.62386864e-08, -0.0377905183, 9.83201005e-08, 0.999285698)
-              elseif MyLevel >= 1325 then
               end
            end
            if ThreeWorld then
@@ -470,7 +469,7 @@ function Dino:CreateWindow(dinotitle)
     
     Window.Name = "Window"
     Window.Parent = DinoUI
-    Window.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    Window.BackgroundColor3 = Color3.fromRGB(224, 224, 224)
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 392, 0, 264)
     Window.Size = UDim2.new(0, 390, 0, 350)
@@ -483,7 +482,7 @@ function Dino:CreateWindow(dinotitle)
     DinoHubText1.Position = UDim2.new(0, 5, 0, 0)
     DinoHubText1.Size = UDim2.new(0, 35, 0, 20)
     DinoHubText1.Font = Enum.Font.GothamSemibold
-    DinoHubText1.Text = "Dino"
+    DinoHubText1.Text = "Mafia X"
     DinoHubText1.TextColor3 = Color3.fromRGB(180, 180, 180)
     DinoHubText1.TextSize = 13.000
     
