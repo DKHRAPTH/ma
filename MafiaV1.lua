@@ -1351,9 +1351,9 @@ end)
 Home:CreateLabel("คำอธิบาย ต้องเลือกอาวุธก่อน ! ")
 Home:CreateToggle("ออโต้ฟาร์ม เลเวล",function(value)
 _G.AutoFarm = value
-while _G.AutoFarm do wait()
+while _G.AutoFarm do wait(0.03)
     pcall(function()
-    if _G.autoequipsword == true or _G.autoequipmelee == true then
+    if _G.autoequipsword == false or _G.autoequipmelee == false then
        if _G.AutoFarm == true then
            CheckQuest()
            if game:GetService("Workspace").Enemies:FindFirstChild(Ms) then
@@ -1362,8 +1362,8 @@ while _G.AutoFarm do wait()
        for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
            if v.Name == Ms then
         if v.Humanoid.Health > 0 then
-        repeat wait()
-            click()
+        repeat wait(0.05)
+            click(0.01)
             if OldWorld then
                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,15,0)
         elseif newworld then
