@@ -1351,7 +1351,7 @@ end)
 Home:CreateLabel("คำอธิบาย ต้องเลือกอาวุธก่อน ! ")
 Home:CreateToggle("ออโต้ฟาร์ม เลเวล",function(value)
 _G.AutoFarm = value
-while _G.AutoFarm do wait(0.03)
+while _G.AutoFarm do wait(0.05)
     pcall(function()
     if _G.autoequipsword == false or _G.autoequipmelee == false then
        if _G.AutoFarm == true then
@@ -1362,7 +1362,7 @@ while _G.AutoFarm do wait(0.03)
        for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
            if v.Name == Ms then
         if v.Humanoid.Health > 0 then
-        repeat wait(0.05)
+        repeat wait(1)
             click(0.01)
             if OldWorld then
                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,15,0)
@@ -1371,7 +1371,7 @@ while _G.AutoFarm do wait(0.03)
         elseif ThreeWorld then
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,15)
          end
-        v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+        v.HumanoidRootPart.Size = Vector3.new(40,40,40)
         v.HumanoidRootPart.Transparency = 3.00
         v.HumanoidRootPart.CanCollide = true
         v.Humanoid:ChangeState(11)
