@@ -476,7 +476,7 @@ function Dino:CreateWindow(dinotitle)
     
     DinoHubText1.Name = "DinoHubText1"
     DinoHubText1.Parent = Window
-    DinoHubText1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    DinoHubText1.BackgroundColor3 = Color3.fromRGB(224, 224, 224)
     DinoHubText1.BackgroundTransparency = 1.000
     DinoHubText1.BorderSizePixel = 0
     DinoHubText1.Position = UDim2.new(0, 5, 0, 0)
@@ -488,7 +488,7 @@ function Dino:CreateWindow(dinotitle)
     
     DinoHubText2.Name = "DinoHubText2"
     DinoHubText2.Parent = Window
-    DinoHubText2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    DinoHubText2.BackgroundColor3 = Color3.fromRGB(224, 224, 224)
     DinoHubText2.BackgroundTransparency = 1.000
     DinoHubText2.BorderSizePixel = 0
     DinoHubText2.Position = UDim2.new(0, 40, 0, 0)
@@ -500,7 +500,7 @@ function Dino:CreateWindow(dinotitle)
     
     WindowText.Name = "WindowText"
     WindowText.Parent = Window
-    WindowText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    WindowText.BackgroundColor3 = Color3.fromRGB(224, 224, 224)
     WindowText.BackgroundTransparency = 1.000
     WindowText.BorderSizePixel = 0
     WindowText.Position = UDim2.new(0, 85, 0, 0)
@@ -1371,7 +1371,7 @@ while _G.AutoFarm do wait(0.05)
         elseif ThreeWorld then
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,15)
          end
-        v.HumanoidRootPart.Size = Vector3.new(40,40,40)
+        v.HumanoidRootPart.Size = Vector3.new(30, 30, 30)
         v.HumanoidRootPart.Transparency = 3.00
         v.HumanoidRootPart.CanCollide = true
         v.Humanoid:ChangeState(11)
