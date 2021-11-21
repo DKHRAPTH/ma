@@ -399,17 +399,17 @@ function CheckQuest()
 				CFrameQuest = CFrame.new(-13234.04, 331.488495, -7625.40137, 0.707134247, -0, -0.707079291, 0, 1, -0, 0.707079291, 0, 0.707134247)
 				CFrameMon = CFrame.new(-13869.172851563, 564.95251464844, -7084.4135742188)
 			elseif MyLevel >= 1900 and MyLevel <= 1924 then
-				Ms = "Jungle Pirate [Lv. 1900]"
+				Ms = "Musketeer Pirate [Lv. 1925]"
 				NaemQuest = "DeepForestIsland2"
 				LevelQuest = 1
-				NameMon = "Jungle Pirate"
+				NameMon = "Musketeer Pirate"
 				CFrameQuest = CFrame.new(-12680.3818, 389.971039, -9902.01953, -0.0871315002, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, -0.0871315002)
 				CFrameMon = CFrame.new(-11982.221679688, 376.32522583008, -10451.415039063)
 			elseif MyLevel >= 1925 then
-				Ms = "Musketeer Pirate [Lv. 1925]"
+				Ms = "Jungle Pirate [Lv. 1900]"
 				NaemQuest = "DeepForestIsland2"
 				LevelQuest = 2
-				NameMon = "Musketeer Pirate"
+				NameMon = "Jungle Pirate"
 				CFrameQuest = CFrame.new(-12680.3818, 389.971039, -9902.01953, -0.0871315002, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, -0.0871315002)
 				CFrameMon = CFrame.new(-13282.3046875, 496.23684692383, -9565.150390625)
 			end
